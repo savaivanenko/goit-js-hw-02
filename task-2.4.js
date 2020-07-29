@@ -1,16 +1,5 @@
 const formatString = function(string) {
-  const arr1 = string.split('');
-      
-    if (arr1.length <= 40){
-      return string;
-    }
-    else {
-    const arr2 = arr1.slice(0, 39,);
-    arr2.push('...')
-   
-    const newString = arr2.join('');
-    console.log(newString);
-    }
+  string.length <= 40 ? console.log(string) : console.log(string.slice(0,40)+'...');
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

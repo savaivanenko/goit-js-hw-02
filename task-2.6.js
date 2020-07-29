@@ -4,10 +4,13 @@ let total = 0;
 
 do{
   input = prompt('Введите число');
-    if (input === null) {break};
+  
+    if (isFinite(input)){
       console.log(input);
-    numbers.push(input);  
-      console.log(numbers);
+      numbers.push(input);
+    }
+    
+    else {alert('Введите число')}
 }
 while (input !== null);
 
